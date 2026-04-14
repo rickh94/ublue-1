@@ -18,7 +18,12 @@ dnf5 install -y tmux
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+# dnf5 -y copr enable ryanabx/cosmic-epoch
+dnf5 install -y @cosmic-desktop-environment gnome-keyring-pam NetworkManager-tui xdg-user-dirs
 
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl disable gdm
+systemctl disable sddm
+systemctl enable cosmic-greeter
