@@ -22,7 +22,7 @@ dnf5 install -y tmux
 # 
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 install -y cosmic-desktop
-dnf5 install -y rustup cockpit cockpit-machines
+dnf5 install -y rustup cockpit cockpit-machines helix gcc llvm chezmoi rclone
 
 #### Example for enabling a System Unit File
 
@@ -30,7 +30,5 @@ systemctl enable podman.socket
 systemctl disable gdm
 systemctl disable sddm
 systemctl enable cosmic-greeter
-
-brew install rclone asdf chezmoi gcc llvm helix
 
 flatpak install com.vivaldi.Vivaldi
