@@ -31,4 +31,4 @@ systemctl disable gdm
 systemctl disable sddm
 systemctl enable cosmic-greeter
 
-flatpak install com.vivaldi.Vivaldi
+# flatpak install com.vivaldi.Vivaldi
