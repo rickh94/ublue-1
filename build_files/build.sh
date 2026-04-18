@@ -21,8 +21,10 @@ dnf5 install -y tmux
 # dnf5 -y copr enable ryanabx/cosmic-epoch
 # 
 dnf5 -y copr enable ryanabx/cosmic-epoch
-dnf5 install -y cosmic-desktop
+dnf5 install -y cosmic-desktop 
 dnf5 install -y rustup cockpit cockpit-machines helix gcc llvm chezmoi rclone
+dnf5 -y copr enable avengemedia/dms
+dnf5 install niri dms mako waybar swaybg swayidle
 
 #### Example for enabling a System Unit File
 
