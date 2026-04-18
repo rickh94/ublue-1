@@ -24,7 +24,7 @@ dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 install -y cosmic-desktop 
 dnf5 install -y rustup cockpit cockpit-machines helix gcc llvm chezmoi rclone
 dnf5 -y copr enable avengemedia/dms
-dnf5 install niri dms mako waybar swaybg swayidle
+dnf5 install -y niri dms mako waybar swaybg swayidle dms-greeter
 
 #### Example for enabling a System Unit File
 
