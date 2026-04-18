@@ -25,6 +25,11 @@ dnf5 install -y cosmic-desktop
 dnf5 install -y rustup cockpit cockpit-machines helix gcc llvm chezmoi rclone
 dnf5 -y copr enable avengemedia/dms
 dnf5 install -y niri dms mako waybar swaybg swayidle dms-greeter
+dnf5 -y copr enable scottames/ghostty
+dnf5 install -y ghostty
+dnf5 -y copr enable wezfurlong/wezterm-nightly
+dnf5 install -y wezterm
+
 
 #### Example for enabling a System Unit File
 
