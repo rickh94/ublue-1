@@ -1,9 +1,11 @@
 # Allow build scripts to be referenced without being copied into the final image
+
+ARG BASE_IMAGE
 FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM $BASE_IMAGE
+FROM ${BASE_IMAGE} AS bazzite
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
