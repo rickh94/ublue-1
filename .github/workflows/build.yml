@@ -105,7 +105,7 @@ jobs:
           # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
           image: ${{ env.IMAGE_NAME }}${{ matrix.variant }}
           build-args: |
-            BASE_IMAGE="ghcr.io/ublue-os/bazzite${{ matrix.variant }}:stable"
+            BASE_IMAGE=ghcr.io/ublue-os/bazzite${{ matrix.variant }}:stable
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           oci: false
