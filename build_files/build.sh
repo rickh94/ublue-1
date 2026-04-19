@@ -27,8 +27,6 @@ dnf5 -y copr enable avengemedia/dms
 dnf5 install -y niri dms mako dms-greeter fuzzel alacritty dsearch cava
 dnf5 -y copr enable scottames/ghostty
 dnf5 install -y ghostty
-dnf5 -y copr enable wezfurlong/wezterm-nightly
-dnf5 install -y wezterm
 
 
 #### Example for enabling a System Unit File
