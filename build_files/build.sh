@@ -32,8 +32,8 @@ dnf5 install -y ghostty
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl disable gdm || true
-systemctl disable sddm || true
+# systemctl disable gdm || true
+# systemctl disable sddm || true
 systemctl disable plasma-login || true
 systemctl enable cosmic-greeter
 
