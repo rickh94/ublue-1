@@ -33,8 +33,8 @@ dnf5 install -y nix
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl disable gdm
-systemctl disable sddm
+#systemctl disable gdm
+#systemctl disable sddm
 systemctl enable cosmic-greeter
 
 # flatpak install com.vivaldi.Vivaldi
