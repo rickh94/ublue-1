@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+# dnf5 install -y tmux 
 
 # Use a COPR Example:
 #
@@ -34,7 +34,7 @@ dnf5 install -y ghostty
 systemctl enable podman.socket
 # systemctl disable gdm || true
 # systemctl disable sddm || true
-systemctl disable plasma-login || true
+systemctl disable plasmalogin || true
 systemctl enable cosmic-greeter
 
 # flatpak install com.vivaldi.Vivaldi
