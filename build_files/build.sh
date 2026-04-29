@@ -33,7 +33,6 @@ dnf5 install -y nix
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-<<<<<<< HEAD
 # systemctl disable gdm || true
 # systemctl disable sddm || true
 systemctl disable plasmalogin || true
