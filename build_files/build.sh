@@ -19,7 +19,7 @@ set -ouex pipefail
 # dnf5 -y copr disable ublue-os/staging
 # dnf5 -y copr enable ryanabx/cosmic-epoch
  
-dnf5 install -y nix-core cockpit cockpit-machines helix gcc llvm chezmoi rclone
+dnf5 install -y nix-core cockpit cockpit-machines helix gcc llvm chezmoi rclone etckeeper
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable yalter/niri
 # dnf5 -y copr enable avengemedia/dms
