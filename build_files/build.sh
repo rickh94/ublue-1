@@ -27,7 +27,7 @@ dnf5 -y copr enable avengemedia/dms
 dnf5 install -y niri dms mako dms-greeter fuzzel alacritty dsearch cava
 dnf5 -y copr enable scottames/ghostty
 dnf5 install -y ghostty
-dnf5 install -y nix
+# dnf5 install -y nix
 
 
 #### Example for enabling a System Unit File
@@ -35,7 +35,7 @@ dnf5 install -y nix
 systemctl enable podman.socket
 # systemctl disable gdm || true
 # systemctl disable sddm || true
-systemctl disable plasmalogin || true
-systemctl enable cosmic-greeter
+# systemctl disable plasmalogin
+# systemctl enable cosmic-greeter
 
 # flatpak install com.vivaldi.Vivaldi
