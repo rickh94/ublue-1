@@ -17,19 +17,19 @@ set -ouex pipefail
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-# dnf5 -y copr enable ryanabx/cosmic-epoch
  
+dnf5 --enablerepo=terra install -y nwg-look noctalia-shell cliphist evolution-data-server
 dnf5 install -y nix-core cockpit cockpit-machines helix gcc llvm chezmoi rclone adw-gtk3-theme qt6ct
+
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable yalter/niri
-# dnf5 -y copr enable avengemedia/dms
 dnf5 -y copr enable scottames/ghostty
-dnf5 install --nogpgcheck --repofrompath 'terra2,https://repos.fyralabs.com/terra$releasever' terra2
+
 dnf5 install -y cosmic-desktop 
-dnf5 install -y niri mako fuzzel noctalia-shell cliphist evolution-data-server nwg-look
+dnf5 install -y niri mako fuzzel
 dnf5 install -y ghostty
+
 dnf5 -y copr disable ryanabx/cosmic-epoch
-dnf5 -y copr disable avengemedia/dms
 dnf5 -y copr disable scottames/ghostty
 dnf5 -y copr disable yalter/niri
 
