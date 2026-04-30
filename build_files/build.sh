@@ -19,12 +19,12 @@ set -ouex pipefail
 # dnf5 -y copr disable ublue-os/staging
 # dnf5 -y copr enable ryanabx/cosmic-epoch
  
-dnf5 install -y nix-core cockpit cockpit-machines helix gcc llvm chezmoi rclone etckeeper adw-gtk3-theme qt6ct
+dnf5 install -y nix-core cockpit cockpit-machines helix gcc llvm chezmoi rclone adw-gtk3-theme qt6ct
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable yalter/niri
 # dnf5 -y copr enable avengemedia/dms
 dnf5 -y copr enable scottames/ghostty
-dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release-2
+dnf5 install --nogpgcheck --repofrompath 'terra2,https://repos.fyralabs.com/terra$releasever' terra-release-2
 dnf5 install -y cosmic-desktop 
 dnf5 install -y niri mako fuzzel noctalia-shell cliphist evolution-data-server nwg-look
 dnf5 install -y ghostty
