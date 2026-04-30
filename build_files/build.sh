@@ -40,7 +40,7 @@ systemctl enable podman.socket
 # systemctl disable gdm || true
 # systemctl disable sddm || true
 systemctl disable plasmalogin
-systemctl enable greetd
-# systemctl enable cosmic-greeter
+# systemctl enable greetd
+systemctl enable cosmic-greeter
 
 # flatpak install com.vivaldi.Vivaldi
