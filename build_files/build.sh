@@ -19,7 +19,7 @@ set -ouex pipefail
 # dnf5 -y copr disable ublue-os/staging
  
 dnf5 --enablerepo=terra install -y nwg-look noctalia-shell cliphist evolution-data-server
-dnf5 install -y nix-core cockpit cockpit-machines helix gcc llvm chezmoi rclone adw-gtk3-theme qt6ct
+dnf5 install -y cockpit cockpit-machines helix gcc llvm chezmoi rclone adw-gtk3-theme qt6ct
 
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y copr enable yalter/niri
