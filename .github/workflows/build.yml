@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-24.04
     strategy:
       matrix:
-        variant: ["", "-nvidia", "-nvidia-open"]
+        variant: ["", "-nvidia"]
 
     permissions:
       contents: read
