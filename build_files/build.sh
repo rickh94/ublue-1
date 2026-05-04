@@ -37,6 +37,7 @@ dnf5 -y copr disable yalter/niri
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable libvirtd
 # systemctl disable gdm || true
 # systemctl disable sddm || true
 systemctl disable plasmalogin
